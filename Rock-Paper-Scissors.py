@@ -1,11 +1,18 @@
 import random as rd
 import numpy as np
-cpoint=0
-ppoint=0
 
 print('Welcome to Rock-Paper-Scissors, a fun game against the computer!\n')
-print('Rules:\n1. In every round, both the computer will choose from either rock, paper or scissors.\n2. A point will be awarded to the one who wins the round.\n3. The point system is as follows:\n\ta. Scissors can cut through the paper, so scissors wins against paper.\n\tb. Paper can wrap up the rock, so paper wins against rock.\n\tc. Rock can break the scissors, so rock wins over scissors.\n4. The first one to score 10 points wins the game.')
+print('''Rules:
+1. In every round, both the computer will choose from either rock, paper or scissors.
+2. A point will be awarded to the one who wins the round.
+3. The point system is as follows:
+    a. Scissors can cut through the paper, so scissors wins against paper.
+    b. Paper can wrap up the rock, so paper wins against rock.
+    c. Rock can break the scissors, so rock wins over scissors.
+4. The first one to score 10 points wins the game.''')
 
+cpoint=0
+ppoint=0
 arr=np.array([[0,-1,1],[1,0,-1],[-1,1,0]])
 opt=['R','P','S']
 cont=''
